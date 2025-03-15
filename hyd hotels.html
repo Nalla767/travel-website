@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Feel Your Trip - Hotels</title>
+    <link rel="icon" href="icon.jpg" type="image/icon type">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #add8e6;
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px;
+            font-size: 2.5rem;
+            font-weight: bold;
+            background-color: rgba(0, 0, 0, 0.4);
+            color: white;
+            text-shadow: 2px 2px 4px #000;
+        }
+
+        .background-image {
+            background-image: url('Hyd for packages.jpg'); /* Add your image path */
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hotel-container {
+            background-color: #d3e0f0;
+            border-radius: 20px;
+            margin: 20px auto;
+            width: 80%;
+            padding: 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+
+        
+
+        .hotel-block {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background-color: #b0c4de;
+            border-radius: 15px;
+            margin: 10px 0;
+        }
+        .hotel-block:hover {
+            transform: scale(1.02);
+        }
+
+        .hotel-block img {
+            width: 150px;
+            height: 100px;
+            border-radius: 10px;
+        }
+
+        .hotel-details {
+            flex-grow: 1;
+            margin-left: 15px;
+        }
+
+        .hotel-details h2, .hotel-details p {
+            margin: 5px 0;
+        }
+
+        .go-button {
+            background-color: #4c69ba;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .go-button:hover {
+            background-color: #3b5998;
+        }
+
+        .back-button {
+            margin: 10px;
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #4c69ba;
+            color: white;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+
+        .back-button:hover {
+            background-color: #3b5998;
+        }
+        footer {
+    background-color: #434141;
+    padding: 20px;
+    margin-top: 250px;
+    text-align: center;
+}
+
+.social-icons {
+     display: flex;
+    justify-content: center;
+     gap: 40px; /* Increased gap between icons */
+     margin-bottom: 10px;
+}
+
+.social-icons a {
+    color: white; /* Make icons white */
+     font-size: 40px; /* Increase icon size */
+     transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+     transform: scale(1.2);
+ }
+    </style>
+</head>
+<body>
+    <div class="header">Feel Your Trip</div>
+    <a href="Hotels.html" class="back-button">&lt; Back</a>
+    <div class="background-image">
+        <h1>Hyderabad Hotels & Places To Stay</h1>
+    </div>
+    
+    
+    <div class="hotel-container">
+        <div class="hotel-block">
+            <img src="Taj krishna.jpg" alt="Taj Krishna">
+            <div class="hotel-details">
+                <h2>1. Taj Krishna</h2>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>Free Wi-Fi, Room Service, Free Parking, Restaurant</p>
+                <p>Avg Price: ₹12,744</p>
+            </div>
+            <button class="go-button" onclick="window.location.href='https://www.tajhotels.com';">Go</button>
+        </div>
+        <div class="hotel-block">
+            <img src="Hyyyd.jpg" alt="The Manohar">
+            <div class="hotel-details">
+                <h2>2. The Manohar Hyderabad</h2>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>Free Wi-Fi, Room Service, Free Parking, Restaurant</p>
+                <p>Avg Price: ₹12,000</p>
+            </div>
+            <button class="go-button" onclick="window.location.href='https://www.themanohar.com';">Go</button>
+        </div>
+        <div class="hotel-block">
+            <img src="Novotel hyd.jpg" alt="Novotel Hyderabad">
+            <div class="hotel-details">
+                <h2>3. Novotel Hyderabad Convention Centre</h2>
+                <p>⭐⭐⭐⭐</p>
+                <p>Free Wi-Fi, Room Service</p>
+                <p>Avg Price: ₹10,744</p>
+            </div>
+            <button class="go-button" onclick="window.location.href='https://www.novotelhyderabad.com';">Go</button>
+        </div>
+        <div class="hotel-block">
+            <img src="Taj deccan hyd.jpg" alt="Taj Deccan">
+            <div class="hotel-details">
+                <h2>4. Taj Deccan, Hyderabad</h2>
+                <p>⭐⭐⭐⭐</p>
+                <p>Free Wi-Fi, Room Service, Free Parking, Restaurant</p>
+                <p>Avg Price: ₹8,744</p>
+            </div>
+            <button class="go-button" onclick="window.location.href='https://www.tajhotels.com';">Go</button>
+        </div>
+        <div class="hotel-block">
+            <img src="Celebrity .jpg" alt="Celebrity Resort">
+            <div class="hotel-details">
+                <h2>5. Celebrity Resort</h2>
+                <p>⭐⭐⭐⭐</p>
+                <p>Free Wi-Fi, Room Service, Free Parking, Restaurant</p>
+                <p>Avg Price: ₹8,799</p>
+            </div>
+            <button class="go-button" onclick="window.location.href='https://www.celebrityresorts.com';">Go</button>
+        </div>
+    </div>
+    <footer>
+        <div class="social-icons">
+           <a href=""><i class="fa-brands fa-youtube"></i></a>
+           <a href=""><i class="fa-brands fa-instagram"></i></a>
+           <a href=""><i class="fa-brands fa-facebook"></i></a>
+           <a href=""><i class="fa-brands fa-telegram"></i></a>
+        </div>
+        <p>Feel Your Trip...!<br> <br> By<br> <br> Work Wizards</p>
+    </footer>
+
+</body>
+</html>

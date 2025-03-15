@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feel Your Trip</title>
+    <link rel="icon" href="icon.jpg" type="image/icon type">
+    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="header">
+        <div class="nav-home">🏠 HOME</div>
+        <h1>FEEL YOUR TRIP...!</h1>
+        <div class="icons">
+            <img src="mypofile.jpg" onclick="navigateTo('My Profile.html')" alt="My Profile">
+            <img src="Aboutusss.png" onclick="navigateTo('About us.html')" alt="About Us">
+        </div>
+    </div>
+
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search Famous Destinations...!">
+        <button onclick="searchCity()">🔍</button>
+    </div>
+
+    <div class="top-destinations">
+        <h3>Top Destinations...</h3>
+        <button class="scroll-button scroll-left" onclick="scrollDest(-300)">⬅</button>
+        <div class="destination-container" id="destinations">
+            <div class="destination" onclick="navigateTo('destination1.html')"><img src="tajmahal.jpg" alt="Taj Mahal"></div>
+            <div class="destination" onclick="navigateTo('destination1.html')"><img src="Red Fort.jpg" alt="Red Fort"></div>
+            <div class="destination" onclick="navigateTo('destination1.html')"><img src="Hawa Mahal.jpg" alt="Hawa Mahal"></div>
+            <div class="destination" onclick="navigateTo('destination2.html')"><img src="Ajantha caves.jpg" alt="Ajanta Caves"></div>
+            <div class="destination" onclick="navigateTo('destination3.html')"><img src="Qutub Minar.jpg" alt="Qutub Minar"></div>
+            <div class="destination" onclick="navigateTo('destination4.html')"><img src="Victoria Memorial.jpg" alt="Victoria Memorial"></div>
+            <div class="destination" onclick="navigateTo('destination5.html')"><img src="Khajuraho Temple.jpg" alt="Khajuraho Temple"></div>
+            <div class="destination" onclick="navigateTo('destination5.html')"><img src="Varanasi.jpg" alt="Varanasi"></div>
+            <div class="destination" onclick="navigateTo('destination5.html')"><img src="Amritsir.jpg" alt="Golden Temple"></div>
+            <div class="destination" onclick="navigateTo('destination5.html')"><img src="Ladakh.jpg" alt="Ladakh"></div>
+            <div class="destination" onclick="navigateTo('destination5.html')"><img src="Kerala.jpg" alt="Kerala"></div>
+            <div class="destination" onclick="navigateTo('destination5.html')"><img src="Goa.jpg" alt="Goa"></div>
+            <div class="destination" onclick="navigateTo('destination5.html')"><img src="Rishikesh Temple.jpg" alt="Rishikesh"></div>
+            <div class="destination" onclick="navigateTo('destination5.html')"><img src="Shimla.jpg" alt="Shimla"></div>
+            <div class="destination" onclick="navigateTo('destination5.html')"><img src="Darzeeling.jpg" alt="Darjeeling"></div>
+            <div class="destination" onclick="navigateTo('destination5.html')"><img src="Kaziranga National Park.jpg" alt="Kaziranga National Park"></div>
+        </div>
+        <button class="scroll-button scroll-right" onclick="scrollDest(300)">➡</button>
+    </div>
+
+    <div class="blocks-container">
+        <div class="block" onclick="navigateTo('travel.html')">
+            <img src="travels icon.png" alt="Travels">
+            <p>Travels</p>
+        </div>
+        <div class="block" onclick="navigateTo('hotels.html')">
+            <img src="Hotels icon.png" alt="Hotels">
+            <p>Hotels</p>
+        </div>
+        <div class="block" onclick="navigateTo('touristers.html')">
+            <img src="Tourister icon.png" alt="Touristers">
+            <p>Touristers</p>
+        </div>
+        <div class="block" onclick="navigateTo('Rentals.html')">
+            <img src="Rentals icon.png" alt="Rentals">
+            <p>Rentals</p>
+        </div>
+        <div class="block" onclick="navigateTo('Holiday Trip.html')">
+            <img src="Holiday icon .png" alt="Holiday Trips">
+            <p>Holiday Trips</p>
+        </div>
+    </div>
+    <footer>
+        <div class="social-icons">
+           <a href=""><i class="fa-brands fa-youtube"></i></a>
+           <a href=""><i class="fa-brands fa-instagram"></i></a>
+           <a href=""><i class="fa-brands fa-facebook"></i></a>
+           <a href=""><i class="fa-brands fa-telegram"></i></a>
+        </div>
+        <p>Feel Your Trip...!<br> <br> By<br> <br> Work Wizards</p>
+    </footer>
+
+    <script>
+        function navigateTo(page) {
+            window.location.href = page;
+        }
+
+        function scrollDest(offset) {
+            const container = document.getElementById('destinations');
+            container.scrollBy({ left: offset, behavior: 'smooth' });
+        }
+
+        function searchCity() {
+            const cityPages = {
+                "hyderabad": "hyderabad.html",
+                "delhi": "delhi.html",
+                "mumbai": "mumbai.html",
+                "goa": "goa.html",
+                "bangalore": "bangalore.html",
+                "kerala": "kerala.html",
+                "tamilnadu": "tamilnadu.html",
+                "jaipur": "jaipur.html",
+                "himachalpradesh": "himachalpradesh.html",
+                "uttarpradesh": "uttarpradesh.html",
+                "darjeeling": "darjeeling.html",
+                "kolkata": "kolkata.html",
+                "chennai": "chennai.html",
+                "pune": "pune.html",
+                "coorg": "coorg.html",
+                "ooty": "ooty.html",
+                "manali": "manali.html",
+                "rishikesh": "rishikesh.html",
+                "amritsar": "amritsar.html",
+                "kaziranga": "kaziranga.html"
+            };
+
+            let input = document.getElementById("searchInput").value.toLowerCase().trim();
+            if (cityPages[input]) {
+                window.location.href = cityPages[input];
+            } else {
+                alert("City not found! Please search from the available destinations.");
+            }
+        }
+    </script>
+
+</body>
+</html>

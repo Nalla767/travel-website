@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamilnadu - Feel Your Trip</title>
+    <link rel="icon" href="icon.jpg" type="image/icon type">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f8f8f8;
+            opacity: 0;
+            animation: fadeIn 1.5s ease-in forwards;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            font-size: 16px;
+            text-decoration: none;
+            color: black;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .back-button:hover {
+            transform: translateX(-5px);
+        }
+
+        .title {
+            margin-top: 20px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+            padding: 10px;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .info-box, .map {
+            flex: 1;
+            max-width: 500px;
+            height: 550px;
+            padding: 15px;
+            background-color: #e3f2fd;
+            border-radius: 10px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .map video {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .sub-title {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+
+        .places-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px;
+        }
+
+        .place {
+            width: 150px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .place:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .place img {
+            width: 100%;
+            height: 120px;
+            border-radius: 10px;
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        .btn {
+            background-color: red;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            margin: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: transform 0.3s, background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: darkred;
+            transform: scale(1.1);
+        }
+        footer {
+            background-color: #434141;
+            padding: 20px;
+            margin-top: 250px;
+            text-align: center;
+        }
+
+        .social-icons {
+             display: flex;
+            justify-content: center;
+             gap: 40px; /* Increased gap between icons */
+             margin-bottom: 10px;
+        }
+
+        .social-icons a {
+            color: white; /* Make icons white */
+             font-size: 40px; /* Increase icon size */
+             transition: transform 0.3s;
+        }
+
+        .social-icons a:hover {
+             transform: scale(1.2);
+         }
+
+        
+       
+            
+        
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <a href="Home.html" class="back-button">&lt; Back</a>
+    <h1 class="title">Feel Your Trip..!</h1>
+
+    <div class="content">
+        <div class="info-box">
+            <h2>Tamil Nadu</h2>
+            <p>Tamil Nadu, located in the southernmost part of India, is a state known for its rich cultural heritage,
+                 vibrant traditions, and historical significance. The state has a long and glorious history, with ancient
+                  dynasties like the Cholas, Cheras, and Pandyas shaping its art, architecture, and politics. Tamil Nadu is 
+                  renowned for its classical music, dance, and literature, especially Tamil literature, which is one of the 
+                  oldest in the world. 
+
+                The state's diverse landscapes range from the lush hills of the Western Ghats to the beautiful beaches along
+                 the Bay of Bengal. Tamil Nadu is home to many iconic temples, including the *Meenakshi Amman Temple* in Madurai 
+                 and the *Brihadeeswarar Temple* in Thanjavur, both of which are UNESCO World Heritage Sites. The architecture 
+                 of these temples is a testament to the state's rich history and its expertise in sculpture and design.
+                
+                The people of Tamil Nadu are known for their hospitality, with a deep respect for tradition, family values,
+                 and culture. The state celebrates numerous festivals like *Pongal, **Navaratri, and **Diwali*, which 
+                 are marked by grand celebrations. Tamil cuisine, famous for its spicy and flavorful dishes, is a major highlight for
+                  visitors. Popular foods include *dosa, **idli, **sambar, and **chettinad cuisine*.
+                
+                Tamil Nadu has a thriving economy, driven by industries like agriculture, textiles, information technology, 
+                and tourism. The state's contribution to India's industrial and technological advancements is significant, with major 
+                cities like Chennai serving as a hub for automotive and software industries. With its vibrant culture, stunning landscapes, and historical landmarks, Tamil Nadu offers a unique and enriching experience to visitors and residents alike.
+              </p>
+        </div>
+        <div class="map">
+            <h2>Location</h2>
+            <video loop muted autoplay>
+                <source src="Tamilnadu gps.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <h2 class="sub-title">Visiting Places ...</h2>
+
+    <div class="places-container">
+        <div class="place">
+            <img src="Madurai Meenakshi.jpg" alt="">
+            <p>Madurai Meenakshi Amman Temple</p>
+        </div>
+        <div class="place">
+            <img src="Kanyakumari Beach.jpg" alt="">
+            <p>Kanyakumari Beach</p>
+        </div>
+        <div class="place">
+            <img src="Thanjavuru.jpg" alt="">
+            <p>Thanjavur</p>
+        </div>
+        <div class="place">
+            <img src="Ooty.jpg" alt="">
+            <p>Ooty </p>
+        </div>
+        <div class="place">
+            <img src="Mahabali puram.jpg" alt="">
+            <p>Mahabalipuram</p>
+        </div>
+        <div class="place">
+            <img src="Kodaikanal.jpg" alt="">
+            <p>Kodaikanal</p>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <a href="Travel.html" class = "btn">Book Tickets</a>
+        <a href="" class = "btn">Book Trip</a>
+    </div>
+
+    <footer>
+        <div class="social-icons">
+           <a href="" ><i class="fa-brands fa-youtube"></i></a>
+           <a href="" ><i class="fa-brands fa-instagram"></i></a>
+           <a href="" ><i class="fa-brands fa-facebook"></i></a>
+           <a href="" ><i class="fa-brands fa-telegram"></i></a>
+        </div>
+        <p>Feel Your Trip...!<br>  <br> By<br>  <br> Work Wizards</p>
+    </footer>
+
+</body>
+</html>

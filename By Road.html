@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Bus Ticket Booking</title>
+    <link rel="icon" href="icon.jpg" type="image/icon type">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #b3d9ff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            font-size: 32px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            color: #333;
+            margin-top: 20px;
+        }
+        .back-button {
+            text-align: left;
+            margin: 20px;
+            font-size: 16px;
+        }
+        .back-button a {
+            text-decoration: none;
+            color: #333;
+        }
+        .back-button a:hover {
+            color: rgb(121, 179, 246);
+            font-weight: bold;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 40px;
+            margin: 50px auto;
+            width: 90%;
+            max-width: 500px;
+            border-radius: 15px;
+            box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+        .input-box {
+            display: block;
+            background: #f2f2f2;
+            border-radius: 30px;
+            padding: 15px 20px;
+            font-size: 18px;
+            border: none;
+            width: 80%;
+            margin: 10px auto;
+            text-align: center;
+            outline: none;
+        }
+        .date-box {
+            display: block;
+            background: #f2f2f2;
+            border-radius: 30px;
+            padding: 15px 20px;
+            font-size: 18px;
+            border: none;
+            width: 85%;
+            margin: 15px auto;
+            text-align: center;
+            outline: none;
+        }
+        button {
+            padding: 14px 35px;
+            border: none;
+            background-color: #5d54e0;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 30px;
+            margin-top: 20px;
+            transition: 0.3s ease-in-out;
+            display: inline-block;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        button:hover {
+            background-color: #4a46c6;
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: #434141;
+            padding: 20px;
+            margin-top: 250px;
+            text-align: center;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-bottom: 10px;
+        }
+        .social-icons a {
+            color: white;
+            font-size: 40px;
+            transition: transform 0.3s;
+        }
+        .social-icons a:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>FEEL YOUR TRIP...!</h1>
+    <div class="back-button">
+        <a href="Travel.html"> &lt; By Train</a>
+    </div>
+    
+    <div class="container">
+        <input type="text" id="from" class="input-box" placeholder="From (e.g., NDLS)">
+        <input type="text" id="to" class="input-box" placeholder="Destination (e.g., BOM)">
+        <input type="date" id="travelDate" class="date-box">
+        <button onclick="redirectToIRCTC()">Find Buses</button>
+    </div>
+    
+    <footer>
+        <div class="social-icons">
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-telegram"></i></a>
+        </div>
+        <p>Feel Your Trip...!<br><br> By<br><br> Work Wizards</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Retrieve saved station details if available
+            document.getElementById("from").value = localStorage.getItem("from") || "";
+            document.getElementById("to").value = localStorage.getItem("to") || "";
+        });
+
+        function redirectToIRCTC() {
+            let fromStation = document.getElementById("from").value.trim().toUpperCase();
+            let toStation = document.getElementById("to").value.trim().toUpperCase();
+            let travelDate = document.getElementById("travelDate").value;
+
+            if (fromStation && toStation && travelDate) {
+                // Save the entered stations for future visits
+                localStorage.setItem("from", fromStation);
+                localStorage.setItem("to", toStation);
+
+                // Format date as DD-MM-YYYY for IRCTC compatibility
+                let formattedDate = travelDate.split("-").reverse().join("-");
+
+                // Construct the IRCTC bus ticket booking URL
+                let irctcUrl = `https://www.bus.irctc.co.in/eticketing/booking?origin=${fromStation}&destination=${toStation}&journeyDate=${formattedDate}`;
+
+                // Open IRCTC with pre-filled details in the same tab
+                window.location.href = irctcUrl;
+            } else {
+                alert("Please fill in From, Destination, and Travel Date.");
+            }
+        }
+    </script>
+
+</body>
+</html>

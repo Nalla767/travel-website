@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyderabad - Feel Your Trip</title>
+    <link rel="icon" href="icon.jpg" type="image/icon type">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f8f8f8;
+            opacity: 0;
+            animation: fadeIn 1.5s ease-in forwards;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            font-size: 16px;
+            text-decoration: none;
+            color: black;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .back-button:hover {
+            transform: translateX(-5px);
+        }
+
+        .title {
+            margin-top: 20px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+            padding: 10px;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .info-box, .map {
+            flex: 1;
+            max-width: 500px;
+            height: 550px;
+            padding: 15px;
+            background-color: #e3f2fd;
+            border-radius: 10px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .map video {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .sub-title {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+
+        .places-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px;
+        }
+
+        .place {
+            width: 150px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .place:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .place img {
+            width: 100%;
+            height: 120px;
+            border-radius: 10px;
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        .btn {
+            background-color: red;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            margin: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: transform 0.3s, background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: darkred;
+            transform: scale(1.1);
+        }
+        footer {
+            background-color: #434141;
+            padding: 20px;
+            margin-top: 250px;
+            text-align: center;
+        }
+
+        .social-icons {
+             display: flex;
+            justify-content: center;
+             gap: 40px; /* Increased gap between icons */
+             margin-bottom: 10px;
+        }
+
+        .social-icons a {
+            color: white; /* Make icons white */
+             font-size: 40px; /* Increase icon size */
+             transition: transform 0.3s;
+        }
+
+        .social-icons a:hover {
+             transform: scale(1.2);
+         }
+
+        
+       
+            
+        
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <a href="Home.html" class="back-button">&lt; Back</a>
+    <h1 class="title">Feel Your Trip..!</h1>
+
+    <div class="content">
+        <div class="info-box">
+            <h2>Kerala</h2>
+            <p>Kerala, located on the southwestern coast of India, is known for its natural beauty, diverse culture, and high quality of life. Often referred to as "God's Own Country,"
+                 the state is famous for its lush green landscapes, serene backwaters, pristine beaches, and hill stations. 
+                 Kerala has a rich cultural heritage, blending Hindu, Christian, and Muslim traditions, which is reflected in its festivals,
+                 art forms, and cuisine. Kathakali, Mohiniyattam, and Theyyam are some of the classical dance and performance art forms that originated here.
+                The state’s economy is largely driven by agriculture, with Kerala being a major producer of spices, coconut, rubber, and tea. 
+                Tourism plays a vital role, attracting visitors worldwide to its tranquil backwaters, Ayurvedic treatments, and cultural experiences.
+                 Kerala is also known for its progressive education and healthcare systems, which have earned it high literacy and life expectancy rates.
+                Kerala’s cuisine is characterized by its use of coconut, seafood, and a variety of spices, with dishes like sadya, appam, and fish curry being favorites. 
+                The state is famous for its scenic hill stations like Munnar and Wayanad, and its vibrant cities such as Kochi and Thiruvananthapuram.
+                 Kerala has a strong emphasis on sustainability, environmental conservation, and a high standard of living. The people of Kerala are known for their warmth, hospitality, 
+                 and strong community values, making it one of India’s most beloved destinations.</p>
+        </div>
+        <div class="map">
+            <h2>Location</h2>
+            <video loop muted autoplay>
+                <source src="Kerala gps .mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <h2 class="sub-title">Visiting Places ...</h2>
+
+    <div class="places-container">
+        <div class="place">
+            <img src="Munnar.jpg" alt="">
+            <p>Munnar</p>
+        </div>
+        <div class="place">
+            <img src="Allepaly.jpg" alt="">
+            <p>Alleppey</p>
+        </div>
+        <div class="place">
+            <img src="Swamy Temple.jpg" alt="">
+            <p>Sree Padmanabhaswamy Temple</p>
+        </div>
+        <div class="place">
+            <img src="Athirapally Waterfalls.jpg" alt="">
+            <p>Athirappilly Water Falls</p>
+        </div>
+        <div class="place">
+            <img src="Varkala Beach.jpg" alt="">
+            <p>Varkala Beach</p>
+        </div>
+        <div class="place">
+            <img src="Edakkal Caves.jpg" alt="">
+            <p>Edakkal Caves</p>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <a href="Travel.html" class = "btn">Book Tickets</a>
+        <a href="" class = "btn">Book Trip</a>
+    </div>
+
+    <footer>
+        <div class="social-icons">
+           <a href="" ><i class="fa-brands fa-youtube"></i></a>
+           <a href="" ><i class="fa-brands fa-instagram"></i></a>
+           <a href="" ><i class="fa-brands fa-facebook"></i></a>
+           <a href="" ><i class="fa-brands fa-telegram"></i></a>
+        </div>
+        <p>Feel Your Trip...!<br>  <br> By<br>  <br> Work Wizards</p>
+    </footer>
+
+</body>
+</html>

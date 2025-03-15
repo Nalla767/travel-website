@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feel Your Trip - Registration</title>
+    <link rel="icon" href="icon.jpg" type="image/icon type">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: url('BG2.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin: 20px;
+            text-shadow: 2px 2px #888;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .form-box {
+            background-color: rgba(56, 55, 57, 0.9);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+            width: 400px;
+            text-align: center;
+        }
+        input, select {
+            width: 80%;
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 20px;
+            border: none;
+            outline: none;
+            text-align: center;
+        }
+        .dob-gender {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            margin: auto;
+        }
+        button {
+            padding: 10px 20px;
+            border-radius: 20px;
+            border: none;
+            background-color: #7a9dfb;
+            color: white;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #5b7de1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h1>Register</h1>
+            <form id="signUpForm">
+                <input type="text" id="fName" placeholder="First Name" required>
+                <input type="text" id="lName" placeholder="Last Name" required>
+                <input type="mobile" id="Mobile No" placeholder="Mobile Number" required>
+                <input type="email" id="rEmail" placeholder="Email" required>
+                <input type="password" id="rPassword" placeholder="Password" required>
+                <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+                <div class="dob-gender">
+                    <input type="date" id="dob" required>
+                    <select id="gender" required>
+                        <option value="">Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <button id="submitSignUp">submit</button>
+            </form>
+        </div>
+    </div>
+    <script type="module" src="Register.js"></script>
+</body>
+</html>

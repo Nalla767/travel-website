@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Touristers Page</title>
+    <link rel="icon" href="icon.jpg" type="image/icon type">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #c5d6fc;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+        h1 {
+            font-size: 40px;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px gray;
+        }
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 10px 15px;
+            font-size: 16px;
+            background-color: #7bd2f2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .back-button:hover {
+            background-color: #245767;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+        .touristers-section {
+            background-color: #c6a9ff;
+            padding: 20px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .tourister {
+            text-align: center;
+            padding: 20px;
+            border-radius: 15px;
+            background: white;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .tourister:hover {
+            transform: scale(1.05);
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        .tourister img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .tourister-info {
+            margin-top: 10px;
+            font-size: 18px;
+            text-align: left;
+        }
+        .find-more {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #94a9ff;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .find-more:hover {
+            background-color: #7589e8;
+        }
+        footer {
+    background-color: #434141;
+    padding: 20px;
+    margin-top: 250px;
+    text-align: center;
+}
+
+.social-icons {
+     display: flex;
+    justify-content: center;
+     gap: 40px; /* Increased gap between icons */
+     margin-bottom: 10px;
+}
+
+.social-icons a {
+    color: white; /* Make icons white */
+     font-size: 40px; /* Increase icon size */
+     transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+     transform: scale(1.2);
+ }
+    </style>
+</head>
+<body>
+    <button class="back-button" onclick="window.location.href='Home.html';">Back</button>
+    <h1>FEEL YOUR TRIP...!</h1>
+    <h2>Our Top Three Touristers</h2>
+    <div class="container">
+        <div class="touristers-section">
+            <div class="tourister">
+                <img src="BHAMRADHIPIC.jpeg" alt="Ajay">
+                <div class="tourister-info">
+                    <strong>Ajay</strong><br>
+                    <li>Age - 25</li><br>
+                    <li>Experience - 2yrs</li><br>
+                    <li>4+ Languages</li>
+                </div>
+            </div>
+            <div class="tourister">
+                <img src="GG11.jpg" alt="Viraj">
+                <div class="tourister-info">
+                    <strong>Viraj</strong><br>
+                    <li>Age - 29</li><br>
+                    <li>Experience - 4yrs</li><br>
+                    <li>6+ Languages</li>
+                </div>
+            </div>
+            <div class="tourister">
+                <img src="Screenshot 2025-02-10 231431.png" alt="Priya">
+                <div class="tourister-info">
+                    <strong>Priya</strong><br>
+                    <li>Age - 25</li><br>
+                    <li>Experience - 3yrs</li><br>
+                    <li>3+ Languages</li>
+                </div>
+            </div>
+        </div>
+        <button class="find-more" onclick="window.location.href='more-touristers.html';">Find More...</button>
+    </div>
+    <footer>
+        <div class="social-icons">
+           <a href=""><i class="fa-brands fa-youtube"></i></a>
+           <a href=""><i class="fa-brands fa-instagram"></i></a>
+           <a href=""><i class="fa-brands fa-facebook"></i></a>
+           <a href=""><i class="fa-brands fa-telegram"></i></a>
+        </div>
+        <p>Feel Your Trip...!<br> <br> By<br> <br> Work Wizards</p>
+    </footer>
+
+</body>
+</html>

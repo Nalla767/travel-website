@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goa- Feel Your Trip</title>
+    <link rel="icon" href="icon.jpg" type="image/icon type">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f8f8f8;
+            opacity: 0;
+            animation: fadeIn 1.5s ease-in forwards;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            font-size: 16px;
+            text-decoration: none;
+            color: black;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .back-button:hover {
+            transform: translateX(-5px);
+        }
+
+        .title {
+            margin-top: 20px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+            padding: 10px;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .info-box, .map {
+            flex: 1;
+            max-width: 500px;
+            height: 550px;
+            padding: 15px;
+            background-color: #e3f2fd;
+            border-radius: 10px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .map video {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .sub-title {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+
+        .places-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px;
+        }
+
+        .place {
+            width: 150px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .place:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .place img {
+            width: 100%;
+            height: 120px;
+            border-radius: 10px;
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        .btn {
+            background-color: red;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            margin: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: transform 0.3s, background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: darkred;
+            transform: scale(1.1);
+        }
+        footer {
+            background-color: #434141;
+            padding: 20px;
+            margin-top: 250px;
+            text-align: center;
+        }
+
+        .social-icons {
+             display: flex;
+            justify-content: center;
+             gap: 40px; /* Increased gap between icons */
+             margin-bottom: 10px;
+        }
+
+        .social-icons a {
+            color: white; /* Make icons white */
+             font-size: 40px; /* Increase icon size */
+             transition: transform 0.3s;
+        }
+
+        .social-icons a:hover {
+             transform: scale(1.2);
+         }
+
+        
+       
+            
+        
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <a href="Home.html" class="back-button">&lt; Back</a>
+    <h1 class="title">Feel Your Trip..!</h1>
+
+    <div class="content">
+        <div class="info-box">
+            <h2>Goa</h2>
+            <p>Goa, India’s smallest state by area, is a popular tourist destination located on the western coast along the Arabian Sea. It is renowned for its stunning beaches like Baga, Calangute, and Anjuna, which attract visitors from around the world. Goa has a rich history influenced by Portuguese rule, which lasted for over 450 years and left a lasting impact on its architecture, culture, and cuisine. The state is famous for its vibrant nightlife, offering numerous beach parties, clubs, and casinos. Goan cuisine is a delightful blend of Indian and Portuguese flavors, with popular dishes like Goan fish curry and bebinca. One of its most significant historical landmarks is the Basilica of Bom Jesus, a UNESCO World Heritage Site that houses the remains of St. Francis Xavier. Goa also hosts colorful festivals like Carnival, Shigmo, and the Sunburn Music Festival, adding to its lively charm. With a tropical climate and warm weather all year round, it remains an ideal vacation spot. The state's economy thrives on tourism, fishing, and cashew nut farming. Goa’s unique mix of Indian and Portuguese culture is reflected in its traditions, lifestyle, and warm hospitality, making it a must-visit destination.
+               </p>
+        </div>
+        <div class="map">
+            <h2>Location</h2>
+            <video loop muted autoplay>
+                <source src="Goa gps.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <h2 class="sub-title">Visiting Places ...</h2>
+
+    <div class="places-container">
+        <div class="place">
+            <img src="Bom Jesus.jpg" alt="Charminar">
+            <p>Basilica of Bom Jesus</p>
+        </div>
+        <div class="place">
+            <img src="Dudhsagar.jpg" alt="Ramoji Film City">
+            <p>Dudh Sagar Waterfalls</p>
+        </div>
+        <div class="place">
+            <img src="Flea Market.jpg" alt="Salar Jung Museum">
+            <p>Anjuna Flea Market</p>
+        </div>
+        <div class="place">
+            <img src="Aguada.webp" alt="Birla Mandir">
+            <p>Aguada Fort</p>
+        </div>
+        <div class="place">
+            <img src="calangute.avif" alt="Golconda Fort">
+            <p>Calangute</p>
+        </div>
+        <div class="place">
+            <img src="OLIC Church.jpg" alt="Wonderla">
+            <p>OLIC Church</p>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <a href="Travel.html" class = "btn">Book Tickets</a>
+        <a href="" class = "btn">Book Trip</a>
+    </div>
+
+    <footer>
+        <div class="social-icons">
+           <a href="" ><i class="fa-brands fa-youtube"></i></a>
+           <a href="" ><i class="fa-brands fa-instagram"></i></a>
+           <a href="" ><i class="fa-brands fa-facebook"></i></a>
+           <a href="" ><i class="fa-brands fa-telegram"></i></a>
+        </div>
+        <p>Feel Your Trip...!<br>  <br> By<br>  <br> Work Wizards</p>
+    </footer>
+
+</body>
+</html>

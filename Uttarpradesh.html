@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uttar Pradesh- Feel Your Trip</title>
+    <link rel="icon" href="icon.jpg" type="image/icon type">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f8f8f8;
+            opacity: 0;
+            animation: fadeIn 1.5s ease-in forwards;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            font-size: 16px;
+            text-decoration: none;
+            color: black;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .back-button:hover {
+            transform: translateX(-5px);
+        }
+
+        .title {
+            margin-top: 20px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+            padding: 10px;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .info-box, .map {
+            flex: 1;
+            max-width: 500px;
+            height: 550px;
+            padding: 15px;
+            background-color: #e3f2fd;
+            border-radius: 10px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .map video {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .sub-title {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+
+        .places-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px;
+        }
+
+        .place {
+            width: 150px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .place:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .place img {
+            width: 100%;
+            height: 120px;
+            border-radius: 10px;
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        .btn {
+            background-color: red;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            margin: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: transform 0.3s, background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: darkred;
+            transform: scale(1.1);
+        }
+        footer {
+            background-color: #434141;
+            padding: 20px;
+            margin-top: 250px;
+            text-align: center;
+        }
+
+        .social-icons {
+             display: flex;
+            justify-content: center;
+             gap: 40px; /* Increased gap between icons */
+             margin-bottom: 10px;
+        }
+
+        .social-icons a {
+            color: white; /* Make icons white */
+             font-size: 40px; /* Increase icon size */
+             transition: transform 0.3s;
+        }
+
+        .social-icons a:hover {
+             transform: scale(1.2);
+         }
+
+        
+       
+            
+        
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <a href="Home.html" class="back-button">&lt; Back</a>
+    <h1 class="title">Feel Your Trip..!</h1>
+
+    <div class="content">
+        <div class="info-box">
+            <h2>Uttar Pradesh</h2>
+            <p> Uttar Pradesh, located in northern India, is the country's most populous state and 
+                a hub of rich history, culture, and diversity. The state plays a vital role in India's
+                 political, social, and economic landscape. With its capital in Lucknow, Uttar Pradesh is
+                  home to some of the most significant historical and religious sites, including the Taj Mahal 
+                  in Agra, Kashi Vishwanath Temple in Varanasi, and the city of Mathura, the birthplace of Lord
+                   Krishna. The state boasts a diverse population, with various communities and languages, including
+                    Hindi, Urdu, and Awadhi. Agriculture is the backbone of Uttar Pradesh's economy, with major crops
+                     like wheat, sugarcane, and rice. The state is also a major industrial hub, contributing to India's 
+            textile, manufacturing, and IT sectors. Uttar Pradesh is a land of vibrant festivals such as Diwali,
+                      Holi, and Eid, reflecting its deep-rooted cultural traditions. Education and healthcare have been prioritized 
+            in recent years, and the state is home to prestigious institutions like the University of Lucknow and Indian
+                       Institutes of Technology. Despite facing challenges like poverty and infrastructure gaps, Uttar Pradesh
+                        continues to grow economically and socially. The state has also seen a significant focus on infrastructure
+                         development, with new highways, airports, and metro systems. As a political powerhouse, Uttar Pradesh plays
+                          a pivotal role in shaping India's governance, with its 80 parliamentary seats making it crucial in national elections.
+                        </p>
+        </div>
+        <div class="map">
+            <h2>Location</h2>
+            <video loop muted autoplay>
+                <source src="UP gps.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <h2 class="sub-title">Visiting Places ...</h2>
+    Lucknow
+    <div class="places-container">
+        <div class="place">
+            <img src="Ayodhya.jpg" alt="">
+            <p>Ayodhya</p>
+        </div>
+        <div class="place">
+            <img src="Varanasi.jpg" alt="">
+            <p>Varanasi</p>
+        </div>
+        <div class="place">
+            <img src="tajmahal.jpg" alt="">
+            <p>Agra</p>
+        </div>
+        <div class="place">
+            <img src="Mathura.jpg" alt="">
+            <p>Mathura </p>
+        </div>
+        <div class="place">
+            <img src="Luknow.jpg" alt="">
+            <p>    Lucknow
+            </p>
+        </div>
+        <div class="place">
+            <img src="Dudhwa.jpg" alt="">
+            <p>Dudhwa National Park</p>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <a href="Travel.html" class = "btn">Book Tickets</a>
+        <a href="" class = "btn">Book Trip</a>
+    </div>
+
+    <footer>
+        <div class="social-icons">
+           <a href="" ><i class="fa-brands fa-youtube"></i></a>
+           <a href="" ><i class="fa-brands fa-instagram"></i></a>
+           <a href="" ><i class="fa-brands fa-facebook"></i></a>
+           <a href="" ><i class="fa-brands fa-telegram"></i></a>
+        </div>
+        <p>Feel Your Trip...!<br>  <br> By<br>  <br> Work Wizards</p>
+    </footer>
+
+</body>
+</html>

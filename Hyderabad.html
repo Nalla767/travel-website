@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyderabad - Feel Your Trip</title>
+    <link rel="icon" href="icon.jpg" type="image/icon type">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f8f8f8;
+            opacity: 0;
+            animation: fadeIn 1.5s ease-in forwards;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            font-size: 16px;
+            text-decoration: none;
+            color: black;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .back-button:hover {
+            transform: translateX(-5px);
+        }
+
+        .title {
+            margin-top: 20px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+            padding: 10px;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .info-box, .map {
+            flex: 1;
+            max-width: 500px;
+            height: 550px;
+            padding: 15px;
+            background-color: #e3f2fd;
+            border-radius: 10px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .map video {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .sub-title {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+
+        .places-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px;
+        }
+
+        .place {
+            width: 150px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .place:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .place img {
+            width: 100%;
+            height: 120px;
+            border-radius: 10px;
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        .btn {
+            background-color: red;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            margin: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: transform 0.3s, background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: darkred;
+            transform: scale(1.1);
+        }
+        footer {
+            background-color: #434141;
+            padding: 20px;
+            margin-top: 250px;
+            text-align: center;
+        }
+
+        .social-icons {
+             display: flex;
+            justify-content: center;
+             gap: 40px; /* Increased gap between icons */
+             margin-bottom: 10px;
+        }
+
+        .social-icons a {
+            color: white; /* Make icons white */
+             font-size: 40px; /* Increase icon size */
+             transition: transform 0.3s;
+        }
+
+        .social-icons a:hover {
+             transform: scale(1.2);
+         }
+
+        
+       
+            
+        
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <a href="Home.html" class="back-button">&lt; Back</a>
+    <h1 class="title">Feel Your Trip..!</h1>
+
+    <div class="content">
+        <div class="info-box">
+            <h2>Hyderabad</h2>
+            <p>Hyderabad, the capital of Telangana, is a major technological and cultural hub in India. Founded in 1591 by Muhammad Quli Qutb Shah, the city has a rich historical background, blending Persian, Mughal, and South Indian influences. One of its most iconic landmarks is the Charminar, which was built in the same year as the city’s establishment. Hyderabad was once ruled by the Nizams, who made it one of the richest princely states in India. Their legacy is still reflected in the city's architecture, traditions, and cultural heritage.
+
+                Over the years, Hyderabad has transformed into a modern IT hub, often referred to as "Cyberabad." The city is home to HITEC City (Hyderabad Information Technology and Engineering Consultancy City), where major tech giants like Microsoft, Google, and Amazon have their offices. The city's economic growth is also fueled by its strong presence in industries like pharmaceuticals and film production. Ramoji Film City, the world's largest film studio complex, attracts filmmakers and tourists alike.
+                
+                Hyderabad is world-famous for its Hyderabadi Biryani, a delicious blend of Mughlai and Telugu flavors. Another historical attraction is the Golconda Fort, which was once a global diamond-trading hub.
+                
+               </p>
+        </div>
+        <div class="map">
+            <h2>Location</h2>
+            <video loop muted autoplay>
+                <source src="Hyd gps vid.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <h2 class="sub-title">Visiting Places ...</h2>
+
+    <div class="places-container">
+        <div class="place">
+            <img src="charminar.jpg" alt="Charminar">
+            <p>Charminar</p>
+        </div>
+        <div class="place">
+            <img src="Ramoji film city.jpg" alt="Ramoji Film City">
+            <p>Ramoji Film City</p>
+        </div>
+        <div class="place">
+            <img src="museum.jpg" alt="Salar Jung Museum">
+            <p>Salar Jung Museum</p>
+        </div>
+        <div class="place">
+            <img src="Birla Mandhir.jpg" alt="Birla Mandir">
+            <p>Birla Mandir</p>
+        </div>
+        <div class="place">
+            <img src="golconda.jpg" alt="Golconda Fort">
+            <p>Golconda Fort</p>
+        </div>
+        <div class="place">
+            <img src="Wonder la.avif" alt="Wonderla">
+            <p>Wonderla</p>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <a href="Travel.html" class = "btn">Book Tickets</a>
+        <a href="" class = "btn">Book Trip</a>
+    </div>
+
+    <footer>
+        <div class="social-icons">
+           <a href="" ><i class="fa-brands fa-youtube"></i></a>
+           <a href="" ><i class="fa-brands fa-instagram"></i></a>
+           <a href="" ><i class="fa-brands fa-facebook"></i></a>
+           <a href="" ><i class="fa-brands fa-telegram"></i></a>
+        </div>
+        <p>Feel Your Trip...!<br>  <br> By<br>  <br> Work Wizards</p>
+    </footer>
+
+</body>
+</html>

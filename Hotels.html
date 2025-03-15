@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hotels in Tourist Places</title>
+  <link rel="icon" href="icon.jpg" type="image/icon type">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    .card {
+      transition: transform 0.3s, box-shadow 0.3s;
+      background-color: #d0c7f7;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    .back:hover{
+        color: rgb(121, 179, 246);
+    }
+    .back-button {
+      align-self: self-start;
+      margin-bottom: 1rem;  
+
+    }
+    .back-button:hover {
+        transform: scale(1.1);
+        color: rgb(121, 179, 246);
+    }
+    .search-box {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .find-button {
+      transition: background-color 0.3s, transform 0.3s;
+    }
+    .find-button:hover {
+      background-color: #5b21b6;
+      transform: scale(1.05);
+    }
+    footer {
+    background-color: #434141;
+    padding: 20px;
+    width: 100%;
+    margin-top: auto ;
+    text-align: center;
+}
+
+.social-icons {
+     display: flex;
+    justify-content: center;
+     gap: 40px; /* Increased gap between icons */
+     margin-bottom: 10px;
+}
+
+.social-icons a {
+    color: white; /* Make icons white */
+     font-size: 40px; /* Increase icon size */
+     transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+     transform: scale(1.2);
+ }
+ footer p {
+  color: white;
+  margin-top: 10px;
+}
+  </style>
+</head>
+<body class="bg-blue-200 min-h-screen flex flex-col items-center p-6">
+  <h1 class="text-4xl font-extrabold mb-4 text-blue-800 tracking-widest">FEEL YOUR TRIP...!</h1>
+  <div class="w-full m
+ax-w-xl flex flex-col items-start mb-4 relative">
+    <button class="back-button" onclick="window.location.href='Home.html';">Back</button>
+    
+  </div>
+  <h2 class="text-xl font-semibold mb-4">Recommended Best Hotels in Top Cities....</h2>
+  <div class="flex space-x-4 bg-purple-300 p-4 rounded-2xl shadow-xl">
+    <a href="Goa htl.html" class="card flex flex-col items-center p-2 rounded-xl">
+      <img src="https://img.icons8.com/ios-filled/100/000000/marker.png" alt="Goa" class="mb-2" />
+      <span class="text-lg font-semibold">• GOA</span>
+    </a>
+    <a href="Agra htl.html" class="card flex flex-col items-center p-2 rounded-xl">
+      <img src="https://img.icons8.com/ios-filled/100/000000/marker.png" alt="Agra" class="mb-2" />
+      <span class="text-lg font-semibold">• Agra</span>
+    </a>
+    <a href="Delhi htl.html" class="card flex flex-col items-center p-2 rounded-xl">
+      <img src="https://img.icons8.com/ios-filled/100/000000/marker.png" alt="Delhi" class="mb-2" />
+      <span class="text-lg font-semibold">• Delhi</span>
+    </a>
+    <a href="hyd hotels.html" class="card flex flex-col items-center p-2 rounded-xl">
+      <img src="https://img.icons8.com/ios-filled/100/000000/marker.png" alt="Hyderabad" class="mb-2" />
+      <span class="text-lg font-semibold">• Hyderabad</span>
+    </a>
+    <a href="Mum hotels.html" class="card flex flex-col items-center p-2 rounded-xl">
+      <img src="https://img.icons8.com/ios-filled/100/000000/marker.png" alt="Mumbai" class="mb-2" />
+      <span class="text-lg font-semibold">• Mumbai</span>
+    </a>
+  </div>
+  <button class="find-button bg-purple-600 text-white px-6 py-2 mt-6 rounded-full shadow-md">Find More...</button>
+  <footer>
+    <div class="social-icons">
+       <a href=""><i class="fa-brands fa-youtube"></i></a>
+       <a href=""><i class="fa-brands fa-instagram"></i></a>
+       <a href=""><i class="fa-brands fa-facebook"></i></a>
+       <a href=""><i class="fa-brands fa-telegram"></i></a>
+    </div>
+    <p>Feel Your Trip...!<br> <br> By<br> <br> Work Wizards</p>
+</footer>
+
+</body>
+</html>
